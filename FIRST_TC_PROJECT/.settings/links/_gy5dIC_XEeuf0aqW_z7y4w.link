@@ -1,0 +1,35 @@
+{
+  "itemId" : "_gy5dIC_XEeuf0aqW_z7y4w",
+  "contextList" : [ {
+    "contextName" : "dev",
+    "repoId" : "_2oyLUC_XEeuf0aqW_z7y4w",
+    "parameterList" : [ {
+      "id" : "_BTcz0Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Username"
+    }, {
+      "id" : "_BTcz0ka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Schema"
+    }, {
+      "id" : "_BTcz00a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_AdditionalParams"
+    }, {
+      "id" : "_BTcz1Ea5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Server"
+    }, {
+      "id" : "_BTcz1Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Password"
+    }, {
+      "id" : "_BTcz1ka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Database"
+    }, {
+      "id" : "_BTcz10a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Port"
+    }, {
+      "id" : "_BTcz2Ea5Eeu5QYcB_g7n7A",
+      "name" : "CTX_STGDB_Shared"
+    }, {
+      "id" : "_QySMEEj4EeuOtuoYFAR7Tw",
+      "name" : "CTX_STGDB_BATCHSIZE"
+    } ]
+  } ]
+}

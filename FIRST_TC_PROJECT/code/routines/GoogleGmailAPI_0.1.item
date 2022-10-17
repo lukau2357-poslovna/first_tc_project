@@ -1,0 +1,224 @@
+package routines;
+
+import com.google.api.client.auth.oauth2.Credential;
+import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
+import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
+import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
+import com.google.api.client.repackaged.org.apache.commons.codec.binary.Base64;
+import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.http.javanet.NetHttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.client.util.store.FileDataStoreFactory;
+import com.google.api.services.gmail.Gmail;
+import com.google.api.services.gmail.GmailScopes;
+import com.google.api.services.gmail.model.Message;
+import com.google.api.services.gmail.model.ListMessagesResponse;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.security.GeneralSecurityException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class GoogleGmailAPI {
+	/**
+	 * Author: Aleksandar Rajic
+	 * Project: MDMProductImporter
+	 * Date: 03.02.2021
+	 * Purpose:
+	 * This is main the class of GmailAPI OAuth authorization and is used to retrieve supplier emails containing XLS data file in attachment
+	 * Google libraries will deal automatically with refreshing token if necessary 
+	 */
+
+    /**
+     * Private variables of GoogleGmailAPI class, required by MDMProductImporter project.
+     */
+    private static String APPLICATION_NAME = null;
+    private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
+    private static String TOKENS_DIRECTORY_PATH = null;
+    private static String OAUTH_TOKEN = null;
+    private static Boolean DELETE_SUPPLIER_EMAILS = Boolean.FALSE;
+    private static List<String> SCOPES = new ArrayList<String>();
+    private static String CREDENTIALS_FILE_PATH = null;
+    private static String EMAIL_DIRECTORY = null;
+
+    public GoogleGmailAPI(String CTX_APPLICATION_NAME, String CTX_TOKENS_DIRECTORY_PATH, String CTX_CREDENTIALS_FILE_PATH, String CTX_EMAIL_DIRECTORY, String CTX_CREDENTIALS, 
+    		Boolean CTX_DELETE_SUPPLIER_EMAILS) {
+    	/**
+    	 * Author: Aleksandar Rajic
+    	 * Project: MDMProductImporter
+    	 * Date: 03.02.2021
+    	 * Purpose:
+    	 * This is the constructor of the GoogleGmailAPI class
+    	 * @param CTX_APPLICATION_NAME Defined name of the project APIs & Services in google console
+    	 * @param CTX_TOKENS_DIRECTORY_PATH Directory location path where gmail libraries will temporary store credentials
+    	 * @param CTX_CREDENTIALS_FILE_PATH File path to credentials.json - Java code will create this JSON file based on provided JSON credential content
+    	 * @param CTX_EMAIL_DIRECTORY Directory location path where emails will be downloaded
+    	 * @param CTX_CREDENTIALS JSON credential content that has been downloaded from google console Credentials page
+    	 * @param CTX_DELETE_SUPPLIER_EMAILS Option if client also wants to delete downloaded emails
+    	 */
+
+    	APPLICATION_NAME = CTX_APPLICATION_NAME;
+    	TOKENS_DIRECTORY_PATH = CTX_TOKENS_DIRECTORY_PATH;
+    	CREDENTIALS_FILE_PATH = CTX_CREDENTIALS_FILE_PATH;
+    	EMAIL_DIRECTORY = CTX_EMAIL_DIRECTORY;
+    	DELETE_SUPPLIER_EMAILS = CTX_DELETE_SUPPLIER_EMAILS;
+    	
+    	// instantiate file object for JSON credential file
+    	File CREDENTIALS_FILE = new File(CREDENTIALS_FILE_PATH);
+    	// in case JSON credential file does not exist on the system, job will create it
+    	if(!CREDENTIALS_FILE.exists()) {
+    		try {
+    			// ensure that folder structure exists
+        		CREDENTIALS_FILE.getParentFile().mkdirs();
+        		// create file output stream for the JSON credential file
+    			FileOutputStream fos = new FileOutputStream(CREDENTIALS_FILE_PATH);
+    			// create byte array from provided JSON content
+    			byte[] strToBytes = CTX_CREDENTIALS.getBytes();
+    			// write bytes to create output stream
+	        	fos.write(strToBytes);
+	        	// close the stream
+	        	fos.close();
+	        } catch(Exception e) {
+	        	// in case of error, print out stack trace
+	        	e.printStackTrace();
+	        }
+    	}
+    }
+    
+    private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
+    	/**
+    	 * Author: Aleksandar Rajic
+    	 * Project: MDMProductImporter
+    	 * Date: 03.02.2021
+    	 * Purpose:
+    	 * Creates an authorized Credential object
+    	 * @param HTTP_TRANSPORT The network HTTP Transport
+    	 * @return An authorized Credential object
+    	 * @throws IOException If the credentials.json file cannot be found
+    	 */
+    	
+        /**
+         * Global instance of the scopes required by this class.
+         * If modifying these scopes, delete your previously saved tokens/ folder.
+         */
+    	SCOPES.add("https://mail.google.com/");
+    	SCOPES.add(GmailScopes.GMAIL_MODIFY);
+    	SCOPES.add(GmailScopes.GMAIL_LABELS);
+        // load client secrets
+        InputStream in = new FileInputStream(CREDENTIALS_FILE_PATH);
+        if (in == null) {
+            throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
+        }
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+        
+        // build flow and trigger user authorization request.
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
+                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
+                .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
+                .setAccessType("offline")
+                .build();
+        // store OAUTH_TOKEN in case user has been authenticated
+        try {
+        	if(flow.getCredentialDataStore().get("user").getAccessToken() != null) {
+        		OAUTH_TOKEN = flow.getCredentialDataStore().get("user").getAccessToken();
+        	}
+        } catch(Exception e) {}
+        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
+        return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
+    }
+    
+    public static String getOAuth() throws IOException, GeneralSecurityException {
+    	/**
+    	 * Author: Aleksandar Rajic
+    	 * Project: MDMProductImporter
+    	 * Date: 03.02.2021
+    	 * Purpose:
+    	 * Returns OAuth token string
+    	 * @return OAUTH_TOKEN An OAuth token as a string
+    	 * @throws IOException If the credentials.json file cannot be found
+    	 * @throws GeneralSecurityException If the credentials are wrong
+    	 */
+
+    	final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+    	getCredentials(HTTP_TRANSPORT);
+    	return OAUTH_TOKEN;
+    }
+
+    public static Integer getSupplierEmails(String emailFrom) throws IOException, GeneralSecurityException {
+    	/**
+    	 * Author: Aleksandar Rajic
+    	 * Project: MDMProductImporter
+    	 * Date: 03.02.2021
+    	 * Purpose:
+    	 * Use OAuth to authorize user to gmail, get and save suppliers emails to defined directory location CTX_EMAIL_DIRECTORY
+    	 * @return messageCounter An counter of how many emails has job gotten and saved to temporary location
+    	 * @throws IOException If the credentials.json file cannot be found
+    	 * @throws GeneralSecurityException If the credentials are wrong
+    	 */
+
+    	Integer messageCounter = 0;
+
+        // build a new authorized API client service.
+        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+        Gmail service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+                .setApplicationName(APPLICATION_NAME)
+                .build();
+        // list all messages from client inbox using filters UNREAD, FROM - emailFrom represents supplier email address
+        // note: google libraries are not dealing with file objects when invoking service object, libraries are dealing with JSON response structure representing an email 
+        ListMessagesResponse listMessagesResponse = service.users().messages().list("me").setQ("is:unread label:inbox from:" + emailFrom).execute();
+        // create a list with messages found using provided filters
+        List<Message> messages = listMessagesResponse.getMessages();
+        if (messages == null || messages.isEmpty()) {
+        	// case when there are no new supplier emails
+            System.out.println("[INFO] - No Message found.");
+        } else {
+        	// case when there are new supplier emails, iterate trough messages list
+            for (Message message : messages) {
+            	// get email object in raw format from the google service
+                Message currentmessage = service.users().messages().get("me", message.getId()).setFormat("raw").execute();
+                // create byte array from the raw message object (important used google library Base64 decoder)
+                byte[] emailBytes = Base64.decodeBase64(currentmessage.getRaw());
+                // create new name for the email file object
+                String emailName = TalendDate.getDate("yyyyMMdd-hhmmss") + "_" + String.valueOf(messageCounter) + ".mail";
+                // instantiate email directory folder
+                File EMAIL_DIRECTORY_FOLDER = new File(EMAIL_DIRECTORY);
+                // ensure email directory folder structure exists
+                EMAIL_DIRECTORY_FOLDER.mkdirs();
+                
+                try {
+                	// create file output stream for the email file object
+                	FileOutputStream fos = new FileOutputStream(EMAIL_DIRECTORY_FOLDER.getAbsolutePath() + java.io.File.separator + emailName);
+                	// write bytes to output stream
+                	fos.write(emailBytes);
+                	// close stream
+                	fos.close();
+                } catch(Exception e) {
+                	// in case of errors print the stack trace
+                	e.printStackTrace();
+                }
+                // increment the message counter
+                messageCounter++;
+                // case if client wants to delete read emails
+                if(DELETE_SUPPLIER_EMAILS) {
+                	try {
+                		// invoke gmail service to delete email using message id
+                		service.users().messages().delete("me", message.getId()).execute();
+                	} catch(Exception e) {
+                		// in case of errors print the stack trace
+                		e.printStackTrace();
+                	}
+                }
+            }
+        }
+        
+        return messageCounter;
+    }
+}

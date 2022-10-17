@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="dev" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="dev">
+    <contextParameter comment="" internalId="_Azxs8EuXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs8UuXEe2KHOkCAtMxyw" name="suppliersEmail" prompt="suppliersEmail?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs8kuXEe2KHOkCAtMxyw" name="fileFilter" prompt="fileFilter?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs80uXEe2KHOkCAtMxyw" name="uom" prompt="uom?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs9EuXEe2KHOkCAtMxyw" name="period" prompt="period?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs9UuXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs9kuXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="pop.gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:oWBMDeHKaRYc6w47hFJEdQUh1ujwrRvGF0ls4ZOSiRoqO/Dlxg=="/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value="995"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice@gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="smtp.gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:vcLokplMbDVJcuVdN/Phor5IBWtcfR95IfFxHLN6GJKInOClGA=="/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="587"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice@gmail.com"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="Avisio"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:z4KTKX9mHr8Dj4Ey/Z4y0FZ6aigEyllnlQ/U0iByLdd7fDtm"/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="gvozden"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;&amp;delivery_details=&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;george.verciuc@avisio.ai&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;https://avisio-api-test.herokuapp.com/api/supplier-product-category/&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;?delivery_type=&quot;"/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value="enc:system.encryption.key.v1:i7SOo9vzi8F9AEmISpJk8eB1OdFAX5Z6cqe4kGQc8w1w5A2u2PvhEsPB5E4z/tnoatnG+ZUH1q5EgPCElN1Jubz7TWDae4jpmuPe"/>
+  </context>
+  <context confirmationNeeded="false" name="production">
+    <contextParameter comment="" internalId="_Azxs90uXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs-EuXEe2KHOkCAtMxyw" name="suppliersEmail" prompt="suppliersEmail?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs-UuXEe2KHOkCAtMxyw" name="fileFilter" prompt="fileFilter?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs-kuXEe2KHOkCAtMxyw" name="uom" prompt="uom?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs-0uXEe2KHOkCAtMxyw" name="period" prompt="period?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs_EuXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs_UuXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="qa">
+    <contextParameter comment="" internalId="_Azxs_kuXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_Azxs_0uXEe2KHOkCAtMxyw" name="suppliersEmail" prompt="suppliersEmail?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtAEuXEe2KHOkCAtMxyw" name="fileFilter" prompt="fileFilter?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtAUuXEe2KHOkCAtMxyw" name="uom" prompt="uom?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtAkuXEe2KHOkCAtMxyw" name="period" prompt="period?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtA0uXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtBEuXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="test">
+    <contextParameter comment="" internalId="_AzxtBUuXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtBkuXEe2KHOkCAtMxyw" name="suppliersEmail" prompt="suppliersEmail?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtB0uXEe2KHOkCAtMxyw" name="fileFilter" prompt="fileFilter?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtCEuXEe2KHOkCAtMxyw" name="uom" prompt="uom?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtCUuXEe2KHOkCAtMxyw" name="period" prompt="period?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtCkuXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_AzxtC0uXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="pop.gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:Yh9NmuS5YWx5jB+ZrV5DlODx4Ci5EEBFpXyRefZq43Rb6vVajA=="/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value="995"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="postgres"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:nsW1/sFoxb5grVw3veSO5xQUg+UKN7kcHYZalG/I5ML6JG8e52/Gdc2sk2lhj+fcSXPmO2EfN207SdQHpDaP5d2TrZO69pEQ4u/EHdgZ6YIYEFse3MmIsjGR90s="/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="avisio-stage-etl.c2nwcwecqegg.eu-central-1.rds.amazonaws.com"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="postgres"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="23"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:GSviQ3YDalgqkUdtd9FusWtzcJaKluQvC39faC9Y"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DkkZXgv+rnVavLZdk9dOavI6YDFAr+d/ZBJysOHs"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_AwVbQC71Eeuqbp3RIw-dOg" name="DataOperation"/>
+    <routinesParameter id="_AxwXkC71Eeuqbp3RIw-dOg" name="Mathematical"/>
+    <routinesParameter id="_Ax0pAC71Eeuqbp3RIw-dOg" name="Numeric"/>
+    <routinesParameter id="_Ax_BEC71Eeuqbp3RIw-dOg" name="Relational"/>
+    <routinesParameter id="_AyMccC71Eeuqbp3RIw-dOg" name="StringHandling"/>
+    <routinesParameter id="_AyTKIC71Eeuqbp3RIw-dOg" name="TalendDataGenerator"/>
+    <routinesParameter id="_AyWNcC71Eeuqbp3RIw-dOg" name="TalendDate"/>
+    <routinesParameter id="_AyohWS71Eeuqbp3RIw-dOg" name="TalendStringUtil"/>
+    <routinesParameter id="_AyewUC71Eeuqbp3RIw-dOg" name="TalendString"/>
+    <routinesParameter id="_B22bsDS5Eeuf4oSlP6fQYA" name="DQTechnical"/>
+    <routinesParameter id="_B2WscDS5Eeuf4oSlP6fQYA" name="DataQualityDependencies"/>
+    <routinesParameter id="_B2MUYDS5Eeuf4oSlP6fQYA" name="DataMasking"/>
+    <routinesParameter id="_B2GNwDS5Eeuf4oSlP6fQYA" name="SQLike"/>
+    <routinesParameter id="_B2RM4DS5Eeuf4oSlP6fQYA" name="DataQuality"/>
+    <routinesParameter id="_B2vG8DS5Eeuf4oSlP6fQYA" name="DqStringHandling"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;[INFO] Email reader started at: &quot; + TalendDate.getDate(&quot;YYYY-MM-dd HH:mm:ss&quot;));&#10;&#10;context.suppliersEmail = &quot;droid.ferrum@gmail.com&quot;;&#10;context.fileFilter = &quot;*.*&quot;;&#10;&#10;Date currentDate = TalendDate.parseDate(&quot;dd-MM-yyyy&quot;,TalendDate.getDate(&quot;dd-MM-yyyy&quot;));&#10;&#10;&#10;long epochCurrent = currentDate.getTime();&#10;//long epochCompare = compareDate.getTime();&#10;String uomString = context.uom;&#10;//System.out.println(&quot;UOM EMAIL &quot; + uomString);&#10;if(uomString.equalsIgnoreCase(&quot;date&quot;)){&#10;&#9;Date compareDate = TalendDate.parseDate(&quot;dd-MM-yyyy&quot;,context.period);&#10;&#9;long epochCompare = compareDate.getTime();&#10;&#9;&#10;&#9;if(epochCurrent&lt;=epochCompare){&#10;&#9;&#9;String resolvedDate = TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, compareDate);&#9;&#9;&#10;&#9;&#9;globalMap.put(&quot;dateForMail&quot;, resolvedDate);&#10;&#9;&#9;//System.out.println(&quot;SUBSTRACTED DAYS &quot; + resolvedDate);&#10;&#9;&#9;&#10;&#9;}else{&#10;&#9;&#9;String resolvedDate = TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, compareDate);&#9;&#9;&#10;&#9;&#9;globalMap.put(&quot;dateForMail&quot;, resolvedDate);&#10;&#9;&#9;//System.out.println(&quot;SUBSTRACTED DAYS &quot; + resolvedDate);&#10;&#9;}&#10;&#9;&#10;}&#10;&#10;if(context.uom.equalsIgnoreCase(&quot;days&quot;)){&#10;&#10;&#9;int per = Integer.parseInt(context.period);&#10;&#9;&#10;&#9;java.time.LocalDate date = java.time.LocalDate.now();&#10;&#9;&#10;&#9;date = date.minusDays(per);&#10;&#9;globalMap.put(&quot;dateForMail&quot;, date.toString());&#10;&#9;&#10;&#9;//Date emailDate = date.toDate();&#10;&#9;//System.out.println(&quot;SUBSTRACTED DAYS &quot; + date.toString());&#10;}&#10;&#10;String tempPath = &quot;&quot;;&#10;String attachPath = &quot;&quot;;&#10;&#10;String systemName = System.getProperty(&quot;os.name&quot;);&#10;java.util.UUID uuid = java.util.UUID.randomUUID();&#10;globalMap.put(&quot;uuid&quot;, uuid);&#10;&#10;&#10;if(systemName.contains(&quot;win&quot;) || systemName.contains(&quot;Win&quot;)){&#10;&#9;tempPath = System.getenv(&quot;tmp&quot;) + &quot;/MDM_Temporary/Mails/&quot; + context.supplierID + &quot;/&quot;;&#10;&#9;attachPath = tempPath + &quot;attachments/&quot; + uuid + &quot;/&quot;;&#10;}else{&#10;&#9;tempPath = &quot;/tmp/MDM_Temporary/Mails/&quot; + context.supplierID + &quot;/&quot;;&#10;&#9;attachPath = tempPath + &quot;attachments/&quot; + uuid + &quot;/&quot;;&#10;}&#10;&#10;globalMap.put(&quot;tempPath&quot;, tempPath);&#10;globalMap.put(&quot;attachPath&quot;, attachPath);&#10;globalMap.put(&quot;systemName&quot;, systemName);&#10;&#10;File temporaryDir= new File(tempPath);&#10;File temporaryAttachDir= new File(attachPath);&#10;&#10;if (!temporaryDir.exists()){&#10;    temporaryDir.mkdirs();&#10;}&#10;&#10;if (!temporaryAttachDir.exists()){&#10;    temporaryAttachDir.mkdirs();&#10;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.File;"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartComponent"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPOP" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.CTX_MAIN_MAIL_HOST"/>
+    <elementParameter field="TEXT" name="PORT" value="context.CTX_MAIN_MAIL_PORT"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.CTX_MAIN_MAIL_USER"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:KHFNg0fh0G++osJ/e1qqoREHncNgZIvbWh3jOAHRKsgzmyzA9qRuqxWkA36jCaZLtGSfLmaM"/>
+    <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="globalMap.get(&quot;tempPath&quot;).toString()"/>
+    <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + (counter_tPOP_1 + 1) + &quot;.mail&quot;"/>
+    <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>
+    <elementParameter field="CHECK" name="NEWER_EMAILS" show="false" value="true"/>
+    <elementParameter field="TEXT" name="MAX_EMAILS" show="false" value="10"/>
+    <elementParameter field="CHECK" name="DELETE_FROM_SERVER" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROTOCOL" value="pop3"/>
+    <elementParameter field="CHECK" name="SPECIFY_MAIL_FOLDER" show="false" value="false"/>
+    <elementParameter field="TEXT" name="MAIL_FOLDER" show="false" value="&quot;INBOX&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="true"/>
+    <elementParameter field="TABLE" name="ADVANCED_FILTER">
+      <elementValue elementRef="FILTER_TIEM" value="From"/>
+      <elementValue elementRef="PATTERN" value="context.suppliersEmail"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="FILTER_RELATION" value="&amp;&amp;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CheckTheInbox"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputMail" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputMail_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="globalMap.get(&quot;tPOP_1_CURRENT_FILEPATH&quot;).toString()"/>
+    <elementParameter field="CLOSED_LIST" name="MAIL_TYPE" value="MIME"/>
+    <elementParameter field="DIRECTORY" name="ATTACHMENT_PATH" value="globalMap.get(&quot;attachPath&quot;).toString()"/>
+    <elementParameter field="TABLE" name="MAIL_PARTS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date"/>
+      <elementValue elementRef="MAIL_PART" value="&quot;Date&quot;"/>
+      <elementValue elementRef="MULTI_VALUE" value="false"/>
+      <elementValue elementRef="PART_SEPARATOR" value="&quot;&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="MAIL_PART" value="&quot;Name&quot;"/>
+      <elementValue elementRef="MULTI_VALUE" value="false"/>
+      <elementValue elementRef="PART_SEPARATOR" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MSG_MAIL_PARTS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date"/>
+      <elementValue elementRef="MAIL_PART" value="From"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="MAIL_PART" value="From"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="GetAttachedFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputMail_1">
+      <column comment="" key="false" length="-1" name="Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//File temporary = new File(context.CTX_ATTACHMENT_DIRECTORY + &quot;/&quot; + context.supplierName + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)))&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CheckFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="This component purpose&#13;&#10;is in testing phase"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="Date" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="globalMap.get(&quot;tempPath&quot;).toString()"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;*.mail&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="true"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="ListFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(&quot;getAttachemntFlag&quot;, false);&#10;String[] filterArray = context.fileFilter.split(&quot;;&quot;);&#10;&#10;System.out.println(&quot;[INFO] &quot; + ((Integer)globalMap.get(&quot;tPOP_1_NB_EMAIL&quot;)) + &quot; messages read.&quot;);&#10;if((globalMap.get(&quot;tPOP_1_CURRENT_FILEPATH&quot;))!=null){&#9;&#9;&#9;&#10;&#9;&#10;&#9;globalMap.put(&quot;getAttachemntFlag&quot;, true);&#10;&#9;&#9;&#9;&#10;&#9;&#9;}&#10;&#9;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="IterateMails"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="globalMap.get(&quot;tempPath&quot;).toString()"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;*&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ListMailDir"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_2_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;D:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;D:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeleteMailFolderFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_3"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="globalMap.get(&quot;attachPath&quot;).toString()"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.fileFilter"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" show="false" value="&quot;*.txt&quot;"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ListAttachedFiles"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="B_02_Provider_Trigger"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="dev"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="AVISIOMDMIMPORTER:_H1lJkELTEeubLaNZyLrPnQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="filePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;tFileList_3_CURRENT_FILEPATH&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="supplierID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.supplierID"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="deliveryType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.deliveryType"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="deliveryDetails"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.deliveryDetails"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Email reader started at: &quot; + TalendDate.getCurrentDate()"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartLog"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;TEMP FILE:  &quot; + (String)globalMap.get(&quot;tFileList_3_CURRENT_FILEPATH&quot;)"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="2"/>
+    <elementParameter field="TEXT" name="LABEL" value="ListFileDebugLog"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Housekeeping"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
+    <elementParameter field="FILE" name="FILENAME" show="false" value="((String)globalMap.get(&quot;tFileList_4_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="globalMap.get(&quot;attachPath&quot;).toString()"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;D:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="DeleteAttachmentFolder"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_2"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_1" target="tPOP_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPOP_1" offsetLabelX="0" offsetLabelY="0" source="tPOP_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputMail_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputMail_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputMail_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputMail_1" target="tFileList_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileInputMail_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(boolean)globalMap.get(&quot;getAttachemntFlag&quot;) == true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileDelete_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileDelete_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_3" offsetLabelX="0" offsetLabelY="0" source="tFileList_3" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_3" offsetLabelX="0" offsetLabelY="0" source="tFileList_3" target="tRunJob_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFileList_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPOP_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_591a518e-affa-4376-a5ef-bf02fd5e3755"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>peRBLog8Z7d+Qj3u58YpOpT+GRhrUBvwcUyRAgOU7tWL5o30vMqzcGHP7fr41/HkFBG3rOY0/T+n&#13;
+J+25HxzmiQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e90a84af-7469-48e8-a8b1-f205b1dde020"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fljpv4cCOBaXyhSiAz+MaRgZWOnAEZb73BVwJQu7ooQmjshjVGzuR25zBBvd5BOmHDuTVKtgyBjM&#13;
++mRwY+tgkw==</DigestValue></Reference></SignedInfo><SignatureValue>UDU3N7IYW8ubKgCHDjw7IzJmCtR9qhpTO+ppYpfMQnq8Laekd1iHve6CyRZWmnoo8irtmK9dvk4K&#13;
+zyYm4UKYW20Npjp2j0IbCaIMeDoVNgxZbvJlj0EWvmHVScGqjA3oAezvV4+r9wfJ1B4ho+bTAg8W&#13;
+q8OjJf9Waq+5fyTHo1BtRrTipmtxznkeaV77Mxjre2EtLEGrEozMYY1m1D4d0hk6HQxFefGf9t0S&#13;
+YJXDoImNP8LQjYGD05q443NCum5/gHrKPQe1A+drFpXwIcI/L6ginUliOTdj8g0i50N2cMSo3gQ5&#13;
+22ChQOmab9OxAR+UA48BDGtkirclw5fAEeVvWA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e90a84af-7469-48e8-a8b1-f205b1dde020" Target="#_591a518e-affa-4376-a5ef-bf02fd5e3755"><Timestamp>2022-10-14 08:05:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="dev" xmi:id="_BVGZoEa5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae" xmi:id="_BVGZoUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:7bjCVba7ENDceTor0p5sLmnUOlkNu1GLQaJBxKllVxaK7P27sfG1TJT0Ag69zc/Ddn9n5dPh8/d3/UQPK/IU+H/rDzM=" xmi:id="_BVGZoka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" type="id_String" value="107.21.193.164" xmi:id="_BVGZo0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" type="id_Integer" value="22" xmi:id="_BVGZpEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_MAP_TEMP" prompt="CTX_MAP_TEMP?" promptNeeded="false" type="id_String" value="C:/tmp/" xmi:id="_BVGZpUa5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="test" xmi:id="_BVGZpka5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae" xmi:id="_BVGZp0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:F1IPtcj3thheQWE7jWyFk9/STtEyjLuXFjLoQvBYNEl02BVmw5J9gv5X4iJSo/fZ+svW2N6ngQSf04j36ZpkHSnJSBA=" xmi:id="_BVGZqEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" type="id_String" value="107.21.193.164" xmi:id="_BVGZqUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" type="id_Integer" value="22" xmi:id="_BVGZqka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_MAP_TEMP" prompt="CTX_MAP_TEMP?" promptNeeded="false" type="id_String" value="/tmp/" xmi:id="_BVGZq0a5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="qa" xmi:id="_BVGZrEa5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae" xmi:id="_BVGZrUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:pXrLumjdhPgW79Zn6FyvGclTn+THn92mgnpNLb620FMkUVGT6x+At6yF9HGHxqzjD1rX2ss1zExx8J3bxyhgq9JPRqQ=" xmi:id="_BVGZrka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" type="id_String" value="107.21.193.164" xmi:id="_BVGZr0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" type="id_Integer" value="22" xmi:id="_BVGZsEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_MAP_TEMP" prompt="CTX_MAP_TEMP?" promptNeeded="false" type="id_String" value="/tmp/" xmi:id="_BVGZsUa5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="production" xmi:id="_BVGZska5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae" xmi:id="_BVGZs0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:S8Yp3LceyarzdFrnoyruzYwnojBj0aF/Maopn39tyBkmaXO5V8U+/q9IQtAaoglr+u95fXgfnDexrCces4A1Zksmvqc=" xmi:id="_BVGZtEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" type="id_String" value="107.21.193.164" xmi:id="_BVGZtUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" type="id_Integer" value="22" xmi:id="_BVGZtka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_MAP_TEMP" prompt="CTX_MAP_TEMP?" promptNeeded="false" type="id_String" value="/tmp/" xmi:id="_BVGZt0a5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_60629fbf-0683-4708-929b-ba41b7c8ff85"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>znk6fieOdrf7Omql7TmemYiZCval5UWLJ8F7qP0V37wwH/pG5luv7GuU/ra2GZhQcp66FcSTz/kp&#13;
+JNF2rWsIpQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1e5325c1-3430-4204-b466-5aeaf4cd1dcc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5lWIaKKBJFx3vX64jI+dZMf8kRUEh50Ajhe6m313cn6cfiAkDIUPZIC5/hlxkm6u1R1ja6VnXY7p&#13;
+jbS3hMKBXw==</DigestValue></Reference></SignedInfo><SignatureValue>f7jmJsJOQ0Bt9SMeyWPZyUi5d2R9HVWqIVEQ6TZLycy3vOMJ8MPEM5CpCl5B5ZX2p/04W4pRlesm&#13;
+yv0BS4H6QEsE2q6kVVK26OPi/6Mw3VgxNNPbWuyi94Dr41KCceVE1nbXwu7NTSWuBQ+hoCA5BrSN&#13;
++6yc8730QgWZjOwK/BBtmnDRmtHtaENK8+envPTQ/hWLsvAz8HoJOmuYTb1ypXCN9nK9egK4EVOn&#13;
+dlQwjPZOl3R0QxqfSVRGb5dqtHHm0pXmdNkTAtj8+yi/ZoRofhAkxNt04LRc61GxvvT6ZZHc5Ibz&#13;
+F47ooFZgNdt3YFXwEoVQJmFCzZDTvCtK/GzHyw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1e5325c1-3430-4204-b466-5aeaf4cd1dcc" Target="#_60629fbf-0683-4708-929b-ba41b7c8ff85"><Timestamp>2022-10-14 08:05:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

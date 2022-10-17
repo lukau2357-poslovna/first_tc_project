@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="dev" xmi:id="_BUO28Ea5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" type="id_String" value="&quot;https://avisio-api-test.herokuapp.com/api/supplier-product-category/&quot;" xmi:id="_BUO28Ua5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" type="id_String" value="&quot;george.verciuc@avisio.ai&quot;" xmi:id="_BUO28ka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:GmrIgn9w7OrS0Onu54AfErSjo2LysiT14FvFKy2DWE5N1hA7GaZAoAbk2thWZHJYD6P7VX24gnfKC87QVJGmWi0gutPzRxRpMA5L" xmi:id="_BUO280a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" type="id_String" value="&quot;&amp;delivery_details=&quot;" xmi:id="_BUO29Ea5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" type="id_String" value="&quot;?delivery_type=&quot;" xmi:id="_BUO29Ua5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="production" xmi:id="_BUO29ka5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO290a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO2-Ea5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" type="id_Password" value="" xmi:id="_BUO2-Ua5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO2-ka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO2-0a5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="qa" xmi:id="_BUO2_Ea5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO2_Ua5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO2_ka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" type="id_Password" value="" xmi:id="_BUO2_0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO3AEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO3AUa5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="test" xmi:id="_BUO3Aka5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO3A0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO3BEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" type="id_Password" value="" xmi:id="_BUO3BUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO3Bka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" type="id_String" value="" xmi:id="_BUO3B0a5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0690ebfd-cc8d-4996-bc81-690ffae74b73"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IhWf6pueiV6t7xrnsxBCYNDd/sQraUP8KS0iVG/gHMk8fHYCtf35rGs8L/8X4zRhtpg5Eb4sjGGV&#13;
+hCapNWbDAw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_23321b7d-a90a-485d-b1e8-0009bf868155"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4Wt87RZWRLaG/wxVO/3Lx9LuYnanO3xpor/w7WpsezDUuaK+m71ypMvyZ3um03WAOfgppVe5WrER&#13;
+uQrgmDY3Dw==</DigestValue></Reference></SignedInfo><SignatureValue>GApkj4x/CgmFxW1duE9ftN3Erda2Qv4rmrigPNRPzVBCLxBVXUNOb9LI7fjStEw0k2favpzgC/aS&#13;
+AUXS0AcbS0QNlxV8YqD8vSt8FOaS+vlkLUgjLLSs0xC0e2GKesvry7/dlZc9whkE+v3Umvzchy74&#13;
+4PrqbPRcthYVle45Hqp9xxnS9PA95HEik8HxVtCcgjPJ4TWvq8ZsV8ZpU3/u3wV4SnWEw8BITmIz&#13;
+MWWIRfYtP5maK4L8ew3ujXPzsJ8H18IPTRj9q+zZOTeXCjpidqyYUfR38sqLskCc//pbwnDtqHWG&#13;
+snnnbap9TbfO3ko76gpDRTUURrXwfCxnbMqAMQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_23321b7d-a90a-485d-b1e8-0009bf868155" Target="#_0690ebfd-cc8d-4996-bc81-690ffae74b73"><Timestamp>2022-10-14 08:05:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

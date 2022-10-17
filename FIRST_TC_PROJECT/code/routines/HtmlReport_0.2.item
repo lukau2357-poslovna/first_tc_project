@@ -1,0 +1,62 @@
+package routines;
+
+/*
+  Creating HTML report 
+ */
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class HtmlReport {
+	
+	public String htmlDocument = "<html>\n<head>\n<style>\nbody{background-color:white;color:blue}\ntable {border-collapse: collapse; width: 100%;}\n div{max-width: 50%;}\n"
+			+ "td, th {border: 1px solid #dddddd; text-align: left; padding: 8px;}\ntr:nth-child(odd){background-color: #5DADE2;color:white}\ntr:hover {background-color: #D6EAF8;}\n</style>\n<body>\n<div>\n";
+
+    
+	
+	public String titleMain = "<h1><img src=\"https://global-uploads.webflow.com/5f0f399bf882685a86af4fd6/5f0f4c3a57d39268775d898a_Avisio%20Basic%20Color.svg\"></h1>\n";
+       
+    
+    public String createReport(String titleInput, int insbp, int upbp, int inspck, int uppck, int insprc, int upprc, int rejected, String started, String finished) {
+    	titleMain = titleMain.concat("<h2>Report for supplier: ");
+    	titleMain = titleMain.concat(titleInput);
+    	titleMain = titleMain.concat("</h2><br>\n");
+    	titleMain = titleMain.concat("<h3>Date: " + TalendDate.getCurrentDate() + "</h3><br>\n");
+    	htmlDocument = htmlDocument.concat(titleMain);
+    	
+    	String tbl = "<table>\n";
+    	
+    	tbl = tbl.concat("<tr><th>Description</th><th>Value</th></tr>\n");
+    	tbl = tbl.concat("<tr><td>Inserted to baseproduct</td><td>" + insbp + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td>Updated to baseproduct</td><td>" + upbp + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td>Inserted to packageproduct</td><td>" + inspck + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td>Updated to packageproduct</td><td>" + uppck + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td>Inserted to price</td><td>" + insprc + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td>Updated to price</td><td>" + upprc + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td style=\"color:red\">Rejected rows</td><td style=\"color:red\">" + rejected + "</td></tr>\n");
+    	tbl = tbl.concat("<tr><td><b>Mapping started at: " + started + "</b></td><td><b>Mapping finished at: " + finished + "</b></td></tr>\n");
+    	
+    	tbl = tbl.concat("</table>\n");   	
+    	
+    	/*String tbl_rejects = "<table>\n<th>Rejected product</th><th>Reason</th>\n";
+    	
+    	Map<String, String> map = hm;
+    	for (String key : map.keySet()) {
+    	    String value = map.get(key);
+    	    tbl_rejects = tbl_rejects.concat("<tr><td>" + key + "</td><td>" + value + "</td></tr>\n");
+    	}
+    		
+    	tbl_rejects = tbl_rejects.concat("</table>\n");	*/	
+    	
+    	
+    	htmlDocument = htmlDocument.concat(tbl);
+    	//htmlDocument = htmlDocument.concat(tbl_rejects);
+    	
+    	htmlDocument = htmlDocument.concat("</div></body>\n</html>");
+    	
+    	
+    	return htmlDocument;
+    	}  
+            
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="dev" xmi:id="_BTHcoEa5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" type="id_String" value="gvozden" xmi:id="_BTHcoUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_BTHcoka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHco0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" type="id_String" value="127.0.0.1" xmi:id="_BTHcpEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:p+0U92fR55mBvtqP9N6deu/qTFqhdYa/k+xvmykAh609d7hJ" xmi:id="_BTHcpUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" type="id_String" value="Avisio" xmi:id="_BTHcpka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_BTHcp0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" type="id_String" value="sharedConn" xmi:id="_BTHcqEa5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="production" xmi:id="_BTHcqUa5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcqka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_BTHcq0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcrEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcrUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_BTHcrka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcr0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcsEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" type="id_String" value="sharedConn" xmi:id="_BTHcsUa5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="qa" xmi:id="_BTHcska5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcs0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHctEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHctUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHctka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_BTHct0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcuEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcuUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" type="id_String" value="sharedConn" xmi:id="_BTHcuka5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="test" xmi:id="_BTHcu0a5Eeu5QYcB_g7n7A">
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" type="id_String" value="postgres" xmi:id="_BTHcvEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" type="id_String" value="public" xmi:id="_BTHcvUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;&quot;" xmi:id="_BTHcvka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" type="id_String" value="avisio-stage-etl.c2nwcwecqegg.eu-central-1.rds.amazonaws.com" xmi:id="_BTHcv0a5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:20oKM7suJb+pW5Y+ulctZD6BGmd83VMQlSK8mU5fzWd6kC1lOb9nHwnkI5xlMPPet3Qtckf+Xop24bq6MtxBCdtNLSFvxcEKwr/NYN//5d/bpSoyG56Yfvb48Hg=" xmi:id="_BTHcwEa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" type="id_String" value="postgres" xmi:id="_BTHcwUa5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" type="id_String" value="5432" xmi:id="_BTHcwka5Eeu5QYcB_g7n7A"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" type="id_String" value="sharedConn" xmi:id="_BTHcw0a5Eeu5QYcB_g7n7A"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4e3f3ac6-b997-4a1f-bbde-6e2c2de123fb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ass/jfIgDWBHsMDsXM4sC+SQURAga/Hlx4qWqUFGy6Hp2aTS2nYNENrTb9s9JNSev8aSr4cAaw0E&#13;
+7LvFTo6liw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_25a72533-6708-46b5-9609-6ddc7ff98806"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Jd8IvyCMR2PgJouf8II1DLuCw77IMmoJYpH95jmG1Zwx36766kjbDSxcyMic2mRz3muYQ8YznR5C&#13;
+8NLmRX/dqw==</DigestValue></Reference></SignedInfo><SignatureValue>EFuSZa9UddOLL1Bn1XXpKF8HfTLrgl+c2R9TcwfxyHzmxQMeAiNjnF0Yy0GfSOaFsNhJXWZL/oHI&#13;
+xjOeWpf12JN2eUN/euPXRelPNVveXqcnB6MKm/FXRliWkqgztVH4NQuzVz/P0o7GQvrbiaXc9vpo&#13;
+7yp4iJZBSh76fz2WUia4DII/qoKFSVPWChjvkPm4T1cpnBbjXHtWl6Idk5V5Itv7EKsQovC95cVH&#13;
+HnqobSpmZN6oNJawWIGWEQi6qVfe3za8MkZsW9lQwFkusON22zzgAlN9nPfQkm+UQ1G8zJxIp5Yl&#13;
+xIXBAiVNVTIAkEfHWNsbTwcjYsPK7rxaXWCv/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_25a72533-6708-46b5-9609-6ddc7ff98806" Target="#_4e3f3ac6-b997-4a1f-bbde-6e2c2de123fb"><Timestamp>2022-10-14 08:05:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

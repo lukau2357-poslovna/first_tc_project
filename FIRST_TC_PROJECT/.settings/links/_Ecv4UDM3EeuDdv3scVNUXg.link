@@ -1,0 +1,120 @@
+{
+  "itemId" : "_Ecv4UDM3EeuDdv3scVNUXg",
+  "contextList" : [ {
+    "contextName" : "dev",
+    "repoId" : "_c_2TEC73Eeuqbp3RIw-dOg",
+    "parameterList" : [ {
+      "id" : "_BStM8Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_USER"
+    }, {
+      "id" : "_BStM9Ea5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_HOST"
+    }, {
+      "id" : "_BStM8ka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PASS"
+    }, {
+      "id" : "_BStM80a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PORT"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_lcD-wDNHEeuDdv3scVNUXg",
+    "parameterList" : [ {
+      "id" : "_BUhx40a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_REST_AUTH"
+    }, {
+      "id" : "_BUhx4Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_CATEGORY_REST_URL"
+    }, {
+      "id" : "_BUhx4ka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_LOOKUPOVERWRITE_EMAIL"
+    } ]
+  }, {
+    "contextName" : "production",
+    "repoId" : "_c_2TEC73Eeuqbp3RIw-dOg",
+    "parameterList" : [ {
+      "id" : "_BStNDEa5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_USER"
+    }, {
+      "id" : "_BStND0a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_HOST"
+    }, {
+      "id" : "_BStNDUa5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PASS"
+    }, {
+      "id" : "_BStNDka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PORT"
+    } ]
+  }, {
+    "contextName" : "production",
+    "repoId" : "_lcD-wDNHEeuDdv3scVNUXg",
+    "parameterList" : [ {
+      "id" : "_BUhx9Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_REST_AUTH"
+    }, {
+      "id" : "_BUhx80a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_CATEGORY_REST_URL"
+    }, {
+      "id" : "_BUhx9Ea5Eeu5QYcB_g7n7A",
+      "name" : "CTX_LOOKUPOVERWRITE_EMAIL"
+    } ]
+  }, {
+    "contextName" : "qa",
+    "repoId" : "_c_2TEC73Eeuqbp3RIw-dOg",
+    "parameterList" : [ {
+      "id" : "_BStNA0a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_USER"
+    }, {
+      "id" : "_BStNBka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_HOST"
+    }, {
+      "id" : "_BStNBEa5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PASS"
+    }, {
+      "id" : "_BStNBUa5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PORT"
+    } ]
+  }, {
+    "contextName" : "qa",
+    "repoId" : "_lcD-wDNHEeuDdv3scVNUXg",
+    "parameterList" : [ {
+      "id" : "_BUhx70a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_REST_AUTH"
+    }, {
+      "id" : "_BUhx7Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_CATEGORY_REST_URL"
+    }, {
+      "id" : "_BUhx7ka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_LOOKUPOVERWRITE_EMAIL"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_c_2TEC73Eeuqbp3RIw-dOg",
+    "parameterList" : [ {
+      "id" : "_BStM-ka5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_USER"
+    }, {
+      "id" : "_BStM_Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_HOST"
+    }, {
+      "id" : "_BStM-0a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PASS"
+    }, {
+      "id" : "_BStM_Ea5Eeu5QYcB_g7n7A",
+      "name" : "CTX_MAIN_MAIL_PORT"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_lcD-wDNHEeuDdv3scVNUXg",
+    "parameterList" : [ {
+      "id" : "_BUhx6Ua5Eeu5QYcB_g7n7A",
+      "name" : "CTX_REST_AUTH"
+    }, {
+      "id" : "_BUhx50a5Eeu5QYcB_g7n7A",
+      "name" : "CTX_CATEGORY_REST_URL"
+    }, {
+      "id" : "_BUhx6Ea5Eeu5QYcB_g7n7A",
+      "name" : "CTX_LOOKUPOVERWRITE_EMAIL"
+    } ]
+  } ]
+}

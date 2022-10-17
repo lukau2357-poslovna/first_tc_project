@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_xTKT0C3_Ee2s-MP9tPtKXg" xmi:version="2.0">
+  <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="imap.gmail.com" xmi:id="_xTKT0S3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="993" xmi:id="_xTKT0i3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integrations@avisio.ai" xmi:id="_xTKT0y3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_xTKT1C3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_FROM_OVERWRITE" prompt="CTX_MAIN_MAIL_FROM_OVERWRITE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="testsuppliersender@gmail.com" xmi:id="_xTKT1S3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_USER_OVERWRITE" prompt="CTX_MAIN_MAIL_USER_OVERWRITE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="testsupplierrecipient@gmail.com" xmi:id="_xTKT1i3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_PASS_OVERWRITE" prompt="CTX_MAIN_MAIL_PASS_OVERWRITE?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ViEPR2Fe/8JKnWHxxnp3kvLzWOWqQosg706ACqfVJ0qc9Rw67/SBfChWxhM=" xmi:id="_xTK64C3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_DELETE_EMAILS" prompt="CTX_MAIN_MAIL_DELETE_EMAILS?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="" xmi:id="_xTK64S3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_CREDENTIALS_JSON" prompt="CTX_MAIN_MAIL_CREDENTIALS_JSON?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_xTK64i3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_USE_OAUTH" prompt="CTX_MAIN_MAIL_USE_OAUTH?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_xTK64y3_Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIN_MAIL_OAUTH_APPNAME" prompt="CTX_MAIN_MAIL_OAUTH_APPNAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_tRTgkC4CEe2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_AFTER_DATE_STRING" prompt="CTX_AFTER_DATE_STRING?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_tRTgkS4CEe2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_AFTER_DATE" prompt="CTX_AFTER_DATE?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="" xmi:id="_tRTgki4CEe2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_EMAIL_SUBJECT" prompt="CTX_EMAIL_SUBJECT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Piz Mitgel POS Articles" xmi:id="_F9ILkC57Ee2s-MP9tPtKXg"/>
+  <contextParameter comment="" name="CTX_MAIL_ARTICLES_FROM" prompt="CTX_MAIL_ARTICLES_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_YcPQUEoIEe2NArEAkv_6oA"/>
+  <contextParameter comment="" name="CTX_MAIL_TRANSACTIONS_FROM" prompt="CTX_MAIL_TRANSACTIONS_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_YcPQUUoIEe2NArEAkv_6oA"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_302540d8-0f9f-4e80-b847-39f762c75cba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nvjJpiOIkLkbD5xQnoSHqcFt9sQPKC25lb0C3B2qhZyPXHtE2r3rYbC0WS//kI0PdL05Eo3x1yMV&#13;
+yXQvrvZWBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4434e12a-081e-4562-ab9b-2b2b115cd567"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U4YKOPporJgvIvR0p22BJHpNixTmb0WItMADoRsiaFok/yR0q4oZ97gh7akG9L1SHddzkYc52G0i&#13;
+r/vm/S5abA==</DigestValue></Reference></SignedInfo><SignatureValue>kxmThOhCizV5S7R5Ql9qqUyFFR1i+/nfygjkZ1LrKEgG/F82v2WYfQdkTO7E1vc6+/Koa4WGktQH&#13;
+ZsXOtj7rJSiECmsBTLrLHR/9vNIKPAVWaJ60jxMVVtJaiCWXSjYqrHxoaoz2SbiON4RkqzOM0ZHI&#13;
+WYAeOiSclj2KKruALVK63G4xUiaynWUNMZd1di+myAtO1iu2ivOyfsYgL91iovQ22eDTF56YnThq&#13;
+x4H91ftpynZ9B6WRKjtp+fzizF1vaC6T/XHlqEG4E+3e5FtMWg7+YyrJS1qfkMXMNgU7AgoEoYaA&#13;
+TVOEvSUZed4IZ5M6Ivw0cOCV/ylrsRUisqPQ0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4434e12a-081e-4562-ab9b-2b2b115cd567" Target="#_302540d8-0f9f-4e80-b847-39f762c75cba"><Timestamp>2022-10-14 13:03:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

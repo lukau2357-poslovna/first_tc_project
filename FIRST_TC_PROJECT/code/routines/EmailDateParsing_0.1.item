@@ -1,0 +1,58 @@
+package routines;
+
+import java.util.Calendar;
+import java.util.Date;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class EmailDateParsing {
+
+	private static int getMonthNumber(String input) {
+		switch(input) {
+		case "Oct":
+			return 10;
+		}
+		return 1;
+	}
+	
+	public static Date parseMailDate(String input) {
+		String splitted[] = input.split("\\s+");
+				
+		int day = Integer.parseInt(splitted[1]);
+		int month = EmailDateParsing.getMonthNumber(splitted[2]);
+		int year = Integer.parseInt(splitted[3]);
+		
+		String lowerUnits[] = splitted[4].split(":");
+		
+		int hour = Integer.parseInt(lowerUnits[0]);
+		int minute = Integer.parseInt(lowerUnits[1]);
+		int second = Integer.parseInt(lowerUnits[2]);
+		
+		Calendar res = Calendar.getInstance();
+		res.set(Calendar.YEAR, year);
+		res.set(Calendar.MONTH, month);
+		res.set(Calendar.DAY_OF_MONTH, day);
+		res.set(Calendar.HOUR, hour);
+		res.set(Calendar.MINUTE, minute);
+		res.set(Calendar.SECOND, second);
+		
+		
+		return res.getTime();
+	}
+}

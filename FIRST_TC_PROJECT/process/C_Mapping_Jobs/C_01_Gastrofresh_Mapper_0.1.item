@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="dev" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="dev">
+    <contextParameter comment="" internalId="_BHSe0EuXEe2KHOkCAtMxyw" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe0UuXEe2KHOkCAtMxyw" name="rejectedProductsCounter" prompt="rejectedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe0kuXEe2KHOkCAtMxyw" name="insertedProductsCounter" prompt="insertedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe00uXEe2KHOkCAtMxyw" name="updatedProductsCounter" prompt="updatedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe1EuXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe1UuXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe1kuXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="pop.gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:Cvt/8ngj9HrxGuEWEPdRtWt2A34bY+Z2vhva7zjReWkAqMqK6g=="/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value="995"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice@gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="smtp.gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:friVdQm96JFsSr1RcPDWOkFVmv6x49/2X2NQBuHiXGLqDMOk5A=="/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="587"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice@gmail.com"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="Avisio"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:ByY7ssXg55wxz6LFc1pxU+WUjFsw2MvzLJ7SEQolCT3S6idb"/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="gvozden"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;&amp;delivery_details=&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;george.verciuc@avisio.ai&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;https://avisio-api-test.herokuapp.com/api/supplier-product-category/&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value="&quot;?delivery_type=&quot;"/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value="enc:system.encryption.key.v1:FpXGVt04UMCx5f1YhehOGrag+Lgh3W1KQ8wQdMpMKrK8fTEHD79cPkSC8re77iF/Jry8pNZj62GysUaBcS7DmNDmfXuitEuS0owq"/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="107.21.193.164"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:ijYKCXVHfms34g4jzdXEDbneTDT6toNwA89UZB4A2+lHQBN9WQsW5NuBAmD06RI1F2R72NGletnnVc757gqdad66Pos="/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae"/>
+    <contextParameter comment="" internalId="_BHSe10uXEe2KHOkCAtMxyw" name="insertedBaseproduct" prompt="insertedBaseproduct?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe2EuXEe2KHOkCAtMxyw" name="categoyMap" prompt="categoyMap?" promptNeeded="false" type="id_Object" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="test">
+    <contextParameter comment="" internalId="_BHSe2UuXEe2KHOkCAtMxyw" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe2kuXEe2KHOkCAtMxyw" name="rejectedProductsCounter" prompt="rejectedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe20uXEe2KHOkCAtMxyw" name="insertedProductsCounter" prompt="insertedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe3EuXEe2KHOkCAtMxyw" name="updatedProductsCounter" prompt="updatedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe3UuXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe3kuXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe30uXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="pop.gmail.com"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:P7aiNJY8l0o1Z6m2YSyv6uvx7sxnnK1x6IwkB0nNfZveUYZYwQ=="/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value="995"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice"/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="postgres"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:drgNEpJ5OmCW39hoxX8Ti3j41nRVp4AHmshrRLVK9uZycp8+qg+pJcFCpis4hbZWi7YZaVNUkL8j4DKfarmxgRE4635LKpkBjFgXw4GTaOVVolX7QrP0Q217M5U="/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="5432"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="avisio-stage-etl.c2nwcwecqegg.eu-central-1.rds.amazonaws.com"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="postgres"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="107.21.193.164"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:lFn4FpbCkW9INCy1yPmzHmexr1ju1uGVkUW8uUYcL4hRJEUeW8HmggppVgx2Kx8lg+wmAEZYLgmyBeHVPeEzLlZ5CRs="/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae"/>
+    <contextParameter comment="" internalId="_BHSe4EuXEe2KHOkCAtMxyw" name="insertedBaseproduct" prompt="insertedBaseproduct?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe4UuXEe2KHOkCAtMxyw" name="categoyMap" prompt="categoyMap?" promptNeeded="false" type="id_Object" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="qa">
+    <contextParameter comment="" internalId="_BHSe4kuXEe2KHOkCAtMxyw" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe40uXEe2KHOkCAtMxyw" name="rejectedProductsCounter" prompt="rejectedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe5EuXEe2KHOkCAtMxyw" name="insertedProductsCounter" prompt="insertedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe5UuXEe2KHOkCAtMxyw" name="updatedProductsCounter" prompt="updatedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe5kuXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe50uXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe6EuXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="107.21.193.164"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:yLT9IcCExBzZBkZMe6u8f7zakLh6PObfRWLwttHgGtaTUAWLc+RyVyHTPD/xjVVDutgPLFk8hsHCVjr47AcEIbnFJOc="/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae"/>
+    <contextParameter comment="" internalId="_BHSe6UuXEe2KHOkCAtMxyw" name="insertedBaseproduct" prompt="insertedBaseproduct?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe6kuXEe2KHOkCAtMxyw" name="categoyMap" prompt="categoyMap?" promptNeeded="false" type="id_Object" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="production">
+    <contextParameter comment="" internalId="_BHSe60uXEe2KHOkCAtMxyw" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe7EuXEe2KHOkCAtMxyw" name="rejectedProductsCounter" prompt="rejectedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe7UuXEe2KHOkCAtMxyw" name="insertedProductsCounter" prompt="insertedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe7kuXEe2KHOkCAtMxyw" name="updatedProductsCounter" prompt="updatedProductsCounter?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe70uXEe2KHOkCAtMxyw" name="supplierID" prompt="supplierID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe8EuXEe2KHOkCAtMxyw" name="deliveryType" prompt="deliveryType?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" internalId="_BHSe8UuXEe2KHOkCAtMxyw" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
+    <contextParameter comment="" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_STGDB_Shared" prompt="CTX_STGDB_Shared?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="sharedConn"/>
+    <contextParameter comment="" name="CTX_STGDB_Username" prompt="CTX_STGDB_Username?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CTX_CATEGORY_DETAILS" prompt="CTX_CATEGORY_DETAILS?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_MAIL" prompt="CTX_CATEGORY_REST_MAIL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_REST_URL" prompt="CTX_CATEGORY_REST_URL?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_CATEGORY_TYPE" prompt="CTX_CATEGORY_TYPE?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_String" value=""/>
+    <contextParameter comment="" name="CTX_REST_AUTH" prompt="CTX_REST_AUTH?" promptNeeded="false" repositoryContextId="_lcD-wDNHEeuDdv3scVNUXg" type="id_Password" value=""/>
+    <contextParameter comment="" name="CTX_SFTP_HOST" prompt="CTX_SFTP_HOST?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="107.21.193.164"/>
+    <contextParameter comment="" name="CTX_SFTP_PASSWORD" prompt="CTX_SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:fswaPDF23VXf5MAybVBALK0Nj4omDqn4H4gcqAaLez3wNuM7ArTep9nmc88Mf/oeApi3Y26C3h08TBrDNi7TaedTbFg="/>
+    <contextParameter comment="" name="CTX_SFTP_PORT" prompt="CTX_SFTP_PORT?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="CTX_SFTP_USERNAME" prompt="CTX_SFTP_USERNAME?" promptNeeded="false" repositoryContextId="_gfmiAC74Eeuqbp3RIw-dOg" type="id_String" value="b1311775499a63cdd59cf9a58ee0ae"/>
+    <contextParameter comment="" internalId="_BHSe8kuXEe2KHOkCAtMxyw" name="insertedBaseproduct" prompt="insertedBaseproduct?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_BHSe80uXEe2KHOkCAtMxyw" name="categoyMap" prompt="categoyMap?" promptNeeded="false" type="id_Object" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1024M&quot;,&quot;-Xmx2048M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="4"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="288"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:x594YtLaoBAkPlK+PJj9LMhtme3WeHLSWW2ouaq4"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Qdon1MpKDEG1ISMLZUPViAfHT23acF7Bgd/CXzwB"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_AwVbQC71Eeuqbp3RIw-dOg" name="DataOperation"/>
+    <routinesParameter id="_AxwXkC71Eeuqbp3RIw-dOg" name="Mathematical"/>
+    <routinesParameter id="_Ax0pAC71Eeuqbp3RIw-dOg" name="Numeric"/>
+    <routinesParameter id="_Ax_BEC71Eeuqbp3RIw-dOg" name="Relational"/>
+    <routinesParameter id="_AyMccC71Eeuqbp3RIw-dOg" name="StringHandling"/>
+    <routinesParameter id="_AyTKIC71Eeuqbp3RIw-dOg" name="TalendDataGenerator"/>
+    <routinesParameter id="_AyWNcC71Eeuqbp3RIw-dOg" name="TalendDate"/>
+    <routinesParameter id="_AyohWS71Eeuqbp3RIw-dOg" name="TalendStringUtil"/>
+    <routinesParameter id="_AyewUC71Eeuqbp3RIw-dOg" name="TalendString"/>
+    <routinesParameter id="_B2RM4DS5Eeuf4oSlP6fQYA" name="DataQuality"/>
+    <routinesParameter id="_B2GNwDS5Eeuf4oSlP6fQYA" name="SQLike"/>
+    <routinesParameter id="_B2vG8DS5Eeuf4oSlP6fQYA" name="DqStringHandling"/>
+    <routinesParameter id="_B2WscDS5Eeuf4oSlP6fQYA" name="DataQualityDependencies"/>
+    <routinesParameter id="_B22bsDS5Eeuf4oSlP6fQYA" name="DQTechnical"/>
+    <routinesParameter id="_B2MUYDS5Eeuf4oSlP6fQYA" name="DataMasking"/>
+    <routinesParameter id="_9kIKQD4kEeuWHKwp6gX-1w" name="HtmlReport"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;[INFO] Mapping file:&quot; + context.filePath + &quot; started at: &quot; + TalendDate.getDate(&quot;dd.MM.yyyy HH:mm:ss&quot;));&#10;&#10;globalMap.put(&quot;started&quot;, TalendDate.getDate(&quot;dd.MM.yyyy HH:mm:ss&quot;));&#10;globalMap.put(&quot;categoryMap&quot;, (java.util.HashMap)context.categoyMap);&#10;globalMap.put(&quot;rejectMap&quot;, new java.util.HashMap());&#10;&#10;&#10;//CONTEXT SETTER FOR DEVELOPERS TEST PURPOSES//&#10;context.deliveryDetails = &quot;/suppliers/gastrofresh&quot;;&#10;context.deliveryType = &quot;sftp&quot;;&#10;context.supplierID = &quot;2&quot;;&#10;&#10;//context.filePath = &quot;D:/AVISIO/talend testing/talend testing/import1/GAF_Avisio_KW 43.csv&quot;;&#10;context.filePath = &quot;D:/AVISIO/talend testing/talend testing/import2/GAF_Avisio_KW 43.csv&quot;;&#10;&#10;//END OF DEV SETTERS&#10;&#10;//Creating directory for processing files&#10;String tempPath=&quot;&quot;;&#10;String cachePath=&quot;&quot;;&#10;&#10;String systemName = System.getProperty(&quot;os.name&quot;);&#10;if(systemName.contains(&quot;win&quot;) || systemName.contains(&quot;Win&quot;)){&#10;&#9;tempPath = System.getenv(&quot;tmp&quot;) + &quot;\\MDM_Temporary\\Report\\&quot; + context.supplierID + &quot;\\&quot;;&#10;&#9;cachePath = tempPath + &quot;cache&quot; + &quot;\\&quot;;&#10;&#9;&#10;}else{&#10;&#9;tempPath = &quot;\\tmp\\MDM_Temporary\\Report\\&quot; + context.supplierID + &quot;\\&quot;;&#10;&#9;cachePath = tempPath + &quot;cache&quot; + &quot;\\&quot;;&#10;&#9;&#10;&#9;&#10;}&#10;&#10;globalMap.put(&quot;tempPath&quot;, tempPath);&#10;globalMap.put(&quot;cachePath&quot;, cachePath);&#10;globalMap.put(&quot;tempFilename&quot;, &quot;tmp_&quot; + context.supplierID + &quot;_&quot; + TalendDate.getDate(&quot;ddMMyyHHmmss&quot;) + &quot;.csv&quot;);&#10;&#10;&#10;File temporaryDir= new File(tempPath);&#10;File cacheDir = new File(cachePath);&#10;&#10;&#10;if (!temporaryDir.exists()){&#10;    temporaryDir.mkdirs();&#10;}&#10;&#10;if (!cacheDir.exists()){&#10;    cacheDir.mkdirs();&#10;}&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.File;"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartComponent"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="This component writing start log.&#13;&#10;This component creates temporary folder for&#13;&#10;file processing."/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_1"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.filePath"/>
+    <elementParameter field="TEXT" name="LABEL" value="IsFileExisting"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Mapping file for Gastrofresh started at: &quot; + TalendDate.getDate(&quot;dd.MM.yyyy HH:mm:ss&quot;)"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="LABEL" value="StartLog"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;The file: &quot; + context.filePath + &quot; not found.&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value="FileNotExists"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_3"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.filePath"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;D:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lieferant"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelnummer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_DE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_IT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_von"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_bis"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Aktiv"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Staffel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bestellbar"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verkaufseinheit"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inhalt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verrechnungseinheit"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MwSt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Listenpreis"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warengruppe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lieferant"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelnummer"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_DE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_IT"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_von"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_bis"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Aktiv"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Staffel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bestellbar"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verkaufseinheit"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inhalt"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verrechnungseinheit"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MwSt"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Listenpreis"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warengruppe"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="LoadFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="gastrofresh_metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="255" name="Lieferant" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelnummer" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_DE" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_IT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_von" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_bis" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Aktiv" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Staffel" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Bestellbar" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verkaufseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Inhalt" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verrechnungseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MwSt" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Listenpreis" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Warengruppe" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="gastrofresh_metadata" name="REJECT">
+      <column comment="" key="false" length="255" name="Lieferant" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelnummer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_DE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_IT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_von" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_bis" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Aktiv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Staffel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Bestellbar" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verkaufseinheit" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Inhalt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verrechnungseinheit" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MwSt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Listenpreis" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Warengruppe" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="gastrofresh_metadata" name="tLogRow_2">
+      <column comment="" key="false" length="255" name="Lieferant" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelnummer" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_DE" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_IT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_von" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_bis" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Aktiv" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Staffel" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Bestellbar" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verkaufseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Inhalt" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verrechnungseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MwSt" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Listenpreis" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Warengruppe" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSchemaComplianceCheck_1"/>
+    <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
+    <elementParameter field="TABLE" name="CHECKCOLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lieferant"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelnummer"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_DE"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_IT"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_von"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_bis"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Aktiv"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Staffel"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bestellbar"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verkaufseinheit"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inhalt"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verrechnungseinheit"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MwSt"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Listenpreis"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warengruppe"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Please note:&#10;(1) Nullable setting in this table is more preferential than the default schema.&#10;(2) Length checking is base on the value of the default schema."/>
+    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="true"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_OTHER:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_OTHER:REPOSITORY_SCHEMA_TYPE" show="false" value="_s-_eEDPeEeuSIYPuZBAUoA - gastrofresh_metadata"/>
+    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
+    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#10;(1) Type discrepancy (include wrong date pattern): 2&#10;(2) Empty or NULL: 4&#10;(3) Length/Precision Error: 8"/>
+    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
+    <elementParameter field="CHECK" name="STRICT_DATE_CHECK" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false"/>
+    <elementParameter field="CHECK" name="EMPTY_IS_NULL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
+    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lieferant"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelnummer"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_DE"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Artikelname_IT"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_von"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verfugbar_bis"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Aktiv"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Staffel"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bestellbar"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verkaufseinheit"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Inhalt"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Verrechnungseinheit"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MwSt"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Listenpreis"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warengruppe"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="CheckSchemaCompliance"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="gastrofresh_metadata" name="tSchemaComplianceCheck_1">
+      <column comment="" key="false" length="255" name="Lieferant" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelnummer" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_DE" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_IT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_von" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_bis" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Aktiv" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Staffel" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Bestellbar" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verkaufseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Inhalt" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verrechnungseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MwSt" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Listenpreis" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Warengruppe" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OTHER" label="gastrofresh_metadata" name="OTHER">
+      <column comment="" key="false" length="255" name="Lieferant" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelnummer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_DE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_IT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_von" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_bis" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Aktiv" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Staffel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Bestellbar" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verkaufseinheit" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Inhalt" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verrechnungseinheit" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MwSt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Listenpreis" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Warengruppe" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="gastrofresh_metadata" name="REJECT">
+      <column comment="" key="false" length="255" name="Lieferant" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelnummer" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_DE" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Artikelname_IT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_von" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verfugbar_bis" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Aktiv" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Staffel" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Bestellbar" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verkaufseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Inhalt" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Verrechnungseinheit" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="MwSt" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Listenpreis" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Warengruppe" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/* &lt;--- See Documentatiton tab*/&#10;&#10;HashMap&lt;String, String&gt; categoryMap = (HashMap)globalMap.get(&quot;categoryMap&quot;);&#10;&#10;String categoryForOutput = categoryMap.get(input_row.Warengruppe);&#10;&#10;//System.out.println(input_row.Verfugbar_von.replaceAll(&quot;/&quot;,&quot;.&quot;) + &quot; -- &quot; + input_row.Verfugbar_bis);&#10;&#13;&#10;output_row.Lieferant = input_row.Lieferant;&#13;&#10;output_row.Artikelnummer = input_row.Artikelnummer;&#13;&#10;output_row.Artikelname_DE = input_row.Artikelname_DE;&#13;&#10;output_row.Artikelname_IT = input_row.Artikelname_IT;&#10;&#10;try{&#10;Date validFrom = TalendDate.parseDate(&quot;dd.MM.yyyy HH:mm&quot;, input_row.Verfugbar_von.replaceAll(&quot;/&quot;,&quot;.&quot;));&#10;Date validTo = TalendDate.parseDate(&quot;dd.MM.yyyy HH:mm&quot;, input_row.Verfugbar_bis.replaceAll(&quot;/&quot;,&quot;.&quot;));&#13;&#10;&#9;output_row.Verfugbar_von = validFrom;&#13;&#10;&#9;output_row.Verfugbar_bis = validTo;&#10;}catch(Exception e){&#10;&#9;output_row.Verfugbar_von = null;&#10;&#9;output_row.Verfugbar_bis = null;&#10;}&#13;&#10;output_row.Aktiv = input_row.Aktiv;&#13;&#10;output_row.Staffel = input_row.Staffel;&#13;&#10;output_row.Bestellbar = input_row.Bestellbar;&#13;&#10;output_row.Verkaufseinheit = input_row.Verkaufseinheit;&#13;&#10;output_row.Inhalt = input_row.Inhalt.replace(&quot;,&quot;,&quot;.&quot;);&#13;&#10;output_row.Verrechnungseinheit = input_row.Verrechnungseinheit;&#13;&#10;output_row.MwSt = input_row.MwSt;&#13;&#10;output_row.Listenpreis = input_row.Listenpreis.replace(&quot;,&quot;,&quot;.&quot;);&#10;output_row.Warengruppe = categoryForOutput;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CategoryMapper"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="This component has a purpose&#13;&#10;to check input for category and&#13;&#10;find it in HashMap. If there is a &#13;&#10;pair with key equals to the input&#13;&#10;category (Warrengrupe) it will be&#13;&#10;replaced with value to be translated to&#13;&#10;Avisio naming conv."/>
+    <metadata connector="FLOW" name="tJavaRow_3">
+      <column comment="" key="false" length="-1" name="Lieferant" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelnummer" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelname_DE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelname_IT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verfugbar_von" nullable="true" originalLength="-1" pattern="&quot;dd.MM.yyyy HH:mm&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verfugbar_bis" nullable="true" originalLength="-1" pattern="&quot;dd.MM.yyyy HH:mm&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Aktiv" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Staffel" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Bestellbar" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verkaufseinheit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Inhalt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verrechnungseinheit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MwSt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Listenpreis" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Warengruppe" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tRhowEE1EeuTdoZ3sY1cBQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MappingFileValues"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="NoCategory">
+      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelname_DE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="ToMapperJob">
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="category" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="base_unit_amount" nullable="true" originalLength="12" pattern="" precision="3" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ean" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="packaging_size" nullable="true" originalLength="8" pattern="" precision="3" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="packaging_unit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier_specific_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="price" nullable="true" originalLength="10" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valid_from" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valid_to" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="from_amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="row2.Warengruppe ==null" name="NoCategory" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="&quot;Category does not exists&quot;" name="Message" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Artikelname_DE " name="Artikelname_DE" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="row2.Warengruppe !=null" name="ToMapperJob" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.Artikelname_DE " name="name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Warengruppe " name="category" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Verrechnungseinheit " name="unit" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Double.parseDouble(row2.Inhalt) " name="base_unit_amount" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="&quot;&quot;" name="ean" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="1.000" name="packaging_size" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.Verkaufseinheit " name="packaging_unit" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Aktiv.equals(&quot;1&quot;) ? true : false " name="active" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="context.supplierID" name="supplier_id" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Artikelnummer " name="supplier_specific_id" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Double.parseDouble(row2.Listenpreis)" name="price" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row2.Verfugbar_von " name="valid_from" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Verfugbar_bis " name="valid_to" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="0" name="from_amount" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Lieferant" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Artikelnummer" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Artikelname_DE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Artikelname_IT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Verfugbar_von" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Verfugbar_bis" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Aktiv" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Staffel" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Bestellbar" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Verkaufseinheit" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Inhalt" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Verrechnungseinheit" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MwSt" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Listenpreis" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Warengruppe" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_4"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(input_row.Artikelname_DE + &quot; &quot; + input_row.Message);&#10;&#10;/*Puts rejected rows to HashMap*/&#10;HashMap hm = (HashMap)globalMap.get(&quot;rejectMap&quot;);&#10;&#10;hm.put(input_row.Artikelname_DE, input_row.Message);&#10;&#10;globalMap.put(&quot;rejectMap&quot;, hm);&#10;&#10;context.rejectedProductsCounter++;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="IncreaseRejectCounter"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_4">
+      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelname_DE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_11"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/*Puts reject rows to the HashMap*/&#10;&#10;HashMap&lt;String, String&gt; hm = (HashMap)globalMap.get(&quot;rejectMap&quot;);&#10;String name = context.rejectedProductsCounter + &quot;.&quot; + input_row.Artikelname_DE;&#10;&#10;hm.put(name, input_row.errorMessage);&#10;&#10;globalMap.put(&quot;rejectMap&quot;, hm);&#10;&#10;context.rejectedProductsCounter++;&#10;&#10;System.out.println(&quot;name&quot; + name);&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.HashMap;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CreateRejectMap"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_11">
+      <column comment="" key="false" length="-1" name="Lieferant" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelnummer" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelname_DE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Artikelname_IT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verfugbar_von" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verfugbar_bis" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Aktiv" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Staffel" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Bestellbar" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verkaufseinheit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Inhalt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Verrechnungseinheit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MwSt" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Listenpreis" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Warengruppe" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="globalMap.get(&quot;cachePath&quot;).toString() + globalMap.get(&quot;tempFilename&quot;).toString()"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="WriteToCacheFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="category" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="base_unit_amount" nullable="true" originalLength="12" pattern="" precision="3" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ean" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="packaging_size" nullable="true" originalLength="8" pattern="" precision="3" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="packaging_unit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier_specific_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="price" nullable="true" originalLength="10" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valid_from" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valid_to" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="from_amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="//System.out.println(globalMap.get(&quot;cachePath&quot;).toString() + globalMap.get(&quot;tempFilename&quot;).toString());&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="BridgeComponent"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="C_03_Processing_Data"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="dev"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="AVISIOMDMIMPORTER:_s3JNAEA8Eeuon6A2Sdte5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="cacheFilePath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="globalMap.get(&quot;cachePath&quot;).toString() + globalMap.get(&quot;tempFilename&quot;).toString()"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="rejectedProductsCounter"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.rejectedProductsCounter"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="supplierID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.supplierID"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="supplier_id"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.supplierID"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="category"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="unit"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_unit_amount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="packaging_size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="packaging_unit"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="active"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supplier_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="supplier_specific_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="price"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="valid_from"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="valid_to"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="from_amount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="category" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="unit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="base_unit_amount" nullable="true" originalLength="12" pattern="" precision="3" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ean" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="packaging_size" nullable="true" originalLength="8" pattern="" precision="3" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="packaging_unit" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier_specific_id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="price" nullable="true" originalLength="10" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valid_from" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valid_to" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="from_amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileExist_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tJavaFlex_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tSchemaComplianceCheck_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Verf_gbar_von"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Verf_gbar_bis"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tJavaRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
+  </connection>
+  <connection connectorName="REJECT" label="row11" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tJavaRow_11">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row11"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_3" offsetLabelX="-2" offsetLabelY="6" source="tJavaRow_3" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Artikelname_IT1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Inhalt1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Listenpreis1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Bestellbar1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Warengruppe1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Lieferant1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Verfugbar_von1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Staffel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Verfugbar_bis1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MwSt1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Verrechnungseinheit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Artikelname_DE1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Verkaufseinheit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Artikelnummer1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Aktiv1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="NoCategory" lineStyle="0" metaname="NoCategory" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tJavaRow_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Artikelname_DE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NoCategory"/>
+  </connection>
+  <connection connectorName="FLOW" label="ToMapperJob" lineStyle="0" metaname="ToMapperJob" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ToMapperJob"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tRunJob_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExist_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c4446e32-c9b3-4fdd-ac74-2b1e958d413c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XB11KXUg5Q42FIumhDwn+SNnFuC/z3Rh5K6C0UCCPgbxy+nX4wPe6qy+Caa66RgSN78S5cBSJUA1&#13;
+EXjKDRZ/Pg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d304b215-3c9a-420b-b9f2-98d58d72bcb5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+WJvk39A9s21Jf4n+5/wFXfAHJ8qTZHr54Xw/aN5YZawS0USCyZmWi6ebLX9WC7c1+ywDwG2eHF4&#13;
+wnQXS+MAfg==</DigestValue></Reference></SignedInfo><SignatureValue>RSIWNhGTZ/j+7dZHJ3lYsMlrEedFKjaCztgLpCtv10lq3tffJnxb75z0bJQO2MC7hOAkP/gv1Wvc&#13;
+S4piQNpS81LoHqnUzLP+Jje9XhK9BADYzmx2PWZQanMgbOMupnT7jzI0kfrKM8oAP0i4yHD6WEB5&#13;
+J0EzxZ8z221ww9b8+guya3Sa5NpSRIA8CMvT1sdJ8seDRCBs9c6axMhMEQb16KV1+llrsXal/5dw&#13;
+0uxOnZoEzK5j4+Ca1uF0y1bB1XfdSC+HPWayKWknBxMMVH61WAdJOMojSrN4d3Q1Nw9n+pmDNUB+&#13;
+CCmKocyINQhukoI88+chc8FZHT35AXquImhUFQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d304b215-3c9a-420b-b9f2-98d58d72bcb5" Target="#_c4446e32-c9b3-4fdd-ac74-2b1e958d413c"><Timestamp>2022-10-14 08:05:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

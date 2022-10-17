@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_B90j8KrSEeykW5Bqa_36Fg">
+    <contextParameter comment="" name="posType" prompt="posType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkoKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFileLoc" prompt="waitingFileLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkoarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFilePath" prompt="waitingFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkoqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="posName" prompt="posName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Yko6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkpKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryType" prompt="deliveryType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkparSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkpqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileName" prompt="fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykp6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileExtension" prompt="fileExtension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkqKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="buyerPOSSFTPFolder" prompt="buyerPOSSFTPFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkqarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="JobID" prompt="JobID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkqqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_articles" prompt="file_path_articles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_FnhOgKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorder" prompt="file_path_guestorder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_FnhOgarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorderitem" prompt="file_path_guestorderitem?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_FnhOgqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_FnhOg6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filesOnServer" prompt="filesOnServer?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="" xmi:id="_2qZzQC-JEe2s-MP9tPtKXg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="qa" xmi:id="_B91LAKrSEeykW5Bqa_36Fg">
+    <contextParameter comment="" name="posType" prompt="posType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykq6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFileLoc" prompt="waitingFileLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkrKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFilePath" prompt="waitingFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkrarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="posName" prompt="posName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkrqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykr6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryType" prompt="deliveryType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YksKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YksarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileName" prompt="fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YksqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileExtension" prompt="fileExtension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Yks6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="buyerPOSSFTPFolder" prompt="buyerPOSSFTPFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YktKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="JobID" prompt="JobID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YktarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_articles" prompt="file_path_articles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GLs5oKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorder" prompt="file_path_guestorder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GLs5oarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorderitem" prompt="file_path_guestorderitem?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GLs5oqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GLs5o6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filesOnServer" prompt="filesOnServer?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="" xmi:id="_2qZzQS-JEe2s-MP9tPtKXg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Test" xmi:id="_B91LAarSEeykW5Bqa_36Fg">
+    <contextParameter comment="" name="posType" prompt="posType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YktqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFileLoc" prompt="waitingFileLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykt6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFilePath" prompt="waitingFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkuKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="posName" prompt="posName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkuarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkuqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryType" prompt="deliveryType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Yku6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkvKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileName" prompt="fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkvarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileExtension" prompt="fileExtension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkvqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="buyerPOSSFTPFolder" prompt="buyerPOSSFTPFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykv6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="JobID" prompt="JobID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkwKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_articles" prompt="file_path_articles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GL5G4KrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorder" prompt="file_path_guestorder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GL5G4arSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorderitem" prompt="file_path_guestorderitem?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GL5G4qrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GL5G46rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filesOnServer" prompt="filesOnServer?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="" xmi:id="_2qZzQi-JEe2s-MP9tPtKXg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="production" xmi:id="_B91LAqrSEeykW5Bqa_36Fg">
+    <contextParameter comment="" name="posType" prompt="posType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkwarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFileLoc" prompt="waitingFileLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkwqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="waitingFilePath" prompt="waitingFilePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykw6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="posName" prompt="posName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkxKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkxarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryType" prompt="deliveryType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkxqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="deliveryDetails" prompt="deliveryDetails?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Ykx6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileName" prompt="fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkyKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="fileExtension" prompt="fileExtension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkyarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="buyerPOSSFTPFolder" prompt="buyerPOSSFTPFolder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-YkyqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="JobID" prompt="JobID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_B-Yky6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_articles" prompt="file_path_articles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GMAboKrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorder" prompt="file_path_guestorder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GMAboarSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path_guestorderitem" prompt="file_path_guestorderitem?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GMAboqrSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;" xmi:id="_GMAbo6rSEeykW5Bqa_36Fg"/>
+    <contextParameter comment="" name="filesOnServer" prompt="filesOnServer?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="" xmi:id="_2qZzQy-JEe2s-MP9tPtKXg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_527b912b-215a-4edd-acd3-5b6397a7e7b9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TV87L6PzBHfPwQUie9zRvs6mXPW192PggXulZpPet7v2ncKO3/2OBA2BeDbf+WNzh9Zou0zX3gMk&#13;
+vvRIaYKEiw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8f7a89ba-e7e0-4225-ae43-7d44cdc63d43"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rV9ayRk4OZULdzL9Ve/naQ/RFnbV+nTJqKIZ5lrNm/2epnWxgX7+Ep/SHLlkvwrjOCYmNTYouTyw&#13;
+tA3FoTpaTQ==</DigestValue></Reference></SignedInfo><SignatureValue>B8wM6d9+ZLO+Yb5Zm2K+NiP+Hq7VTUwBJ9itRqZd8JOLR9G8w5RvV4rYVbJCGcvGxbG7wJfT5VOj&#13;
+Z5QyZrTQy3cfypNKFfnzEeoPbH2VF0XQyqTyyjX7citaoZ1VEbFkzy/fBKpaE+5fmd950EOFbdIq&#13;
+39c7YtQMJCTNx8bNc6WsS/XbR+IW60pMeXfrZfRLC5QQxx2JTQpX5PVuoo3TrjzJg7ZJuPgQ4OsN&#13;
+j41Y83PcPBPcenINfEFcCbZ2UMPlxPaBlRDRjnBH8xxnM0AxNs/QZwPV0c6RDml65BrMOigJC7Ur&#13;
+NGRz20YdcamSv0VHdaPQxQoprHaBH+NtZdhEzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8f7a89ba-e7e0-4225-ae43-7d44cdc63d43" Target="#_527b912b-215a-4edd-acd3-5b6397a7e7b9"><Timestamp>2022-10-14 13:03:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
