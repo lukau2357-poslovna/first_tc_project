@@ -14,17 +14,17 @@
     <contextParameter comment="" internalId="_BYIXO0uXEe2KHOkCAtMxyw" name="supplier_id" prompt="supplier_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;1&quot;"/>
     <contextParameter comment="" internalId="_GLTwUEutEe2KHOkCAtMxyw" name="CTX_DB_COUNTER" prompt="CTX_DB_COUNTER?" promptNeeded="false" repositoryContextId="_jngF8EaEEeuMN_Rhnq1rvQ" type="id_String" value="100"/>
     <contextParameter comment="" internalId="_GLTwUUutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="imap.gmail.com"/>
-    <contextParameter comment="" internalId="_GLTwUkutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:TChZ/IqEv6Sfn05+a85yzHt7q/G/RulSm9ecNvLyALbI20l+hA=="/>
+    <contextParameter comment="" internalId="_GLTwUkutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:V2UTnQQeXJH10crT+7LUjwFrIbZWOuPMHh6Is33Z0tfoUBAgAw=="/>
     <contextParameter comment="" internalId="_GLTwU0utEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value="993"/>
     <contextParameter comment="" internalId="_GLTwVEutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice@gmail.com"/>
     <contextParameter comment="" internalId="_GLTwVUutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="smtp.gmail.com"/>
-    <contextParameter comment="" internalId="_GLTwVkutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:jdtqpB6u1vfXA2v6WSgLMoVuV5Ai6N/KXG4m9t/u+ZhUIzc1wA=="/>
+    <contextParameter comment="" internalId="_GLTwVkutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:/pVNP0ndScAmSb4+z0haIyRZR/yxxf5WlFybJGpmkBPgGN/9mA=="/>
     <contextParameter comment="" internalId="_GLTwV0utEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="587"/>
     <contextParameter comment="" internalId="_GLTwWEutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="eisenmann.vitservice@gmail.com"/>
     <contextParameter comment="" internalId="_GLTwWUutEe2KHOkCAtMxyw" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
     <contextParameter comment="" internalId="_GLTwWkutEe2KHOkCAtMxyw" name="CTX_STGDB_BATCHSIZE" prompt="CTX_STGDB_BATCHSIZE?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Integer" value="10000"/>
     <contextParameter comment="" internalId="_GLTwW0utEe2KHOkCAtMxyw" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="postgres"/>
-    <contextParameter comment="" internalId="_GLTwXEutEe2KHOkCAtMxyw" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:pMVphQUhm5DvbxVdfkut+WnrsYkA2WnYpON9wTKLV7MNViH7hxYp8mS/q4xd+cQlUVy5i2ti7GMbd8F9e2BJuKXT1FvVDLwCynnTIAu2H8ZaCHKkzh5t9ylWRzs="/>
+    <contextParameter comment="" internalId="_GLTwXEutEe2KHOkCAtMxyw" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:D6PFlXXjLWjMyIcfWeGmDu63yKLmRrl5BFDjYakSI3yV6L9eT2hf/ObMM0WXKXQv8A9+rw0Nvq3PUdpR7orce81nCqNAGcqdBIQxOf8SWMMzj4BGgYrYE2SDTzg="/>
     <contextParameter comment="" internalId="_GLTwXUutEe2KHOkCAtMxyw" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_GLTwXkutEe2KHOkCAtMxyw" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_GLTwX0utEe2KHOkCAtMxyw" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="avisio-stage-etl.c2nwcwecqegg.eu-central-1.rds.amazonaws.com"/>
@@ -113,17 +113,17 @@
     <contextParameter comment="" internalId="_BYIXX0uXEe2KHOkCAtMxyw" name="supplier_id" prompt="supplier_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;&quot;"/>
     <contextParameter comment="" internalId="_GLTwiUutEe2KHOkCAtMxyw" name="CTX_DB_COUNTER" prompt="CTX_DB_COUNTER?" promptNeeded="false" repositoryContextId="_jngF8EaEEeuMN_Rhnq1rvQ" type="id_String" value="100"/>
     <contextParameter comment="" internalId="_GLTwikutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_HOST" prompt="CTX_MAIN_MAIL_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="imap.gmail.com"/>
-    <contextParameter comment="" internalId="_GLUXYEutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:ofgafLcXlzVB8eq33PUijts7+6Z5ZQb+T6Nj5wTi+AlEr8Cshef4PBAHMKcy8OK4"/>
+    <contextParameter comment="" internalId="_GLUXYEutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_PASS" prompt="CTX_MAIN_MAIL_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:l2aynPuDw6GDkeAQZMPGo9VpEdiycLw0lOvkhOZqu81L+dauYL7ETRfwT6XVBdw7"/>
     <contextParameter comment="" internalId="_GLUXYUutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_PORT" prompt="CTX_MAIN_MAIL_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Integer" value="993"/>
     <contextParameter comment="" internalId="_GLUXYkutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER" prompt="CTX_MAIN_MAIL_SENDER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="notifications@avisio.ai"/>
     <contextParameter comment="" internalId="_GLUXY0utEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_HOST" prompt="CTX_MAIN_MAIL_SENDER_HOST?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="smtp.gmail.com"/>
-    <contextParameter comment="" internalId="_GLUXZEutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:lxZoy4/Ym18fNEKiH4GKV3NMeFC2a4JTAAqA6tsbAzso9YOXZ8zRjPxw+6Si"/>
+    <contextParameter comment="" internalId="_GLUXZEutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_PASS" prompt="CTX_MAIN_MAIL_SENDER_PASS?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_Password" value="enc:system.encryption.key.v1:EB7af+w54k/IDYIbUxpUeUhboB+99K7oCmbDDtQU9mGgQD5zs0aSFj/IkjnI"/>
     <contextParameter comment="" internalId="_GLUXZUutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_SENDER_PORT" prompt="CTX_MAIN_MAIL_SENDER_PORT?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="587"/>
     <contextParameter comment="" internalId="_GLUXZkutEe2KHOkCAtMxyw" name="CTX_MAIN_MAIL_USER" prompt="CTX_MAIN_MAIL_USER?" promptNeeded="false" repositoryContextId="_c_2TEC73Eeuqbp3RIw-dOg" type="id_String" value="suppliers@avisio.ai"/>
     <contextParameter comment="" internalId="_GLUXZ0utEe2KHOkCAtMxyw" name="CTX_STGDB_AdditionalParams" prompt="CTX_STGDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="&quot;&quot;"/>
     <contextParameter comment="" internalId="_GLUXaEutEe2KHOkCAtMxyw" name="CTX_STGDB_BATCHSIZE" prompt="CTX_STGDB_BATCHSIZE?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Integer" value="10000"/>
     <contextParameter comment="" internalId="_GLUXaUutEe2KHOkCAtMxyw" name="CTX_STGDB_Database" prompt="CTX_STGDB_Database?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="postgres"/>
-    <contextParameter comment="" internalId="_GLUXakutEe2KHOkCAtMxyw" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:g9Gm7g4mnhMAG4lYjuxc2xgoQ67OV7wiBv70PHfIVstWbmuTK50B7x6x9gRb449k28eWS8qGIbzy5hntilFYkLj2kRO7Wx56NA4qoJvjcSEYnFzolfusZHDs62U="/>
+    <contextParameter comment="" internalId="_GLUXakutEe2KHOkCAtMxyw" name="CTX_STGDB_Password" prompt="CTX_STGDB_Password?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_Password" value="enc:system.encryption.key.v1:7xrqs8fWfVRjdQhniIkdXpeyp+hscq5aAvPL7Udqjj62HDp+u1e+VZb/zncX25droVMNSiqCwT1mHVwLGEGsK6e2rT4iTI94jXGah64b5BgIYngegxne18qOdow="/>
     <contextParameter comment="" internalId="_GLUXa0utEe2KHOkCAtMxyw" name="CTX_STGDB_Port" prompt="CTX_STGDB_Port?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_GLUXbEutEe2KHOkCAtMxyw" name="CTX_STGDB_Schema" prompt="CTX_STGDB_Schema?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_GLUXbUutEe2KHOkCAtMxyw" name="CTX_STGDB_Server" prompt="CTX_STGDB_Server?" promptNeeded="false" repositoryContextId="_2oyLUC_XEeuf0aqW_z7y4w" type="id_String" value="avisio-stage-etl.c2nwcwecqegg.eu-central-1.rds.amazonaws.com"/>
@@ -176,7 +176,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:sXcEgiCMUNUydzbDqpeDtgCRh7fm9pgRCaT3cm4v"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:kU3ShnTxBP0uYlysiZkTjigkJp0uX3N+8lPAAfzj"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -211,7 +211,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gByKIe8bnYAoYv8qF30d0iSn71xcEW6yaGlf2V8i"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IhI2NQsjHyFia4AgF5s5PNAexm/2Z9oQMMWxDaV3"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -260,7 +260,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.CTX_STGDB_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.CTX_STGDB_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.CTX_STGDB_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zUP2rT1oGKlwKFv2c9rI3WKOtNLUqJlDKIRJ2/H9+QpFSeMyq6cnq+2KyCL1Tm0C+FElAQI2"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:chFNfwKZXkVS12lbrPICRi1oQtCqYONW/BjcAwPNwa3IzOnCBAw2ugiHKtP0EwNsXKbP1OEZ"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
@@ -360,7 +360,7 @@
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.CTX_MAIN_MAIL_SENDER"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:g165jePGfkUpn0Zcq/t5qvdh+VDm3IZn0dOFc0QoToTyLGfihqXqpr8cSiN18Ie7xKBHp3T2jORxF3rrCw=="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:Z2af0bdNFrZTA0MglxrLs0xZ2Au3BGAGPpgSd6/2B/DI+Mt70uycIh4jPLsa/l6GrZnj1vpjbuUBF08r8Q=="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -369,6 +369,7 @@
     <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="LABEL" value="Send Report"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
     <metadata connector="FLOW" name="tSendMail_1">
       <column comment="" key="false" length="-1" name="filereport" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -645,7 +646,7 @@
       <column comment="" key="false" length="-1" name="valid_to_timestamp" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="(Relational.ISNULL(row2.id) &amp;&amp; Relational.ISNULL(row13.id)) || (Relational.ISNULL(row2.id)) &amp;&amp; (baseproduct.ean == null || baseproduct.ean.isEmpty())" name="new_baseproduct" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="baseproduct.name " name="name" nullable="true" type="id_String"/>
@@ -710,7 +711,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:F+52yWiSLQO/jp4QbkVtzpVUgpIxlbTnVoJbfhbsYyZQcWO7BU8="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+a2egMf+5GWQcm81k1HhbSf5oZ6W3TqBrUZZUWsGhL+ndRH21vw="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -759,7 +760,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Xwa2fYnHS1uwl4A6eFhzTXvWio43ws62JXzLSTGhZpxA5Qo6yi8="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MgzRLygQxkHqcCTGANWZm1sOyIsCdQ5WeW0XTWzAzVRJ7Spxzxk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -909,7 +910,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vjV0ULxbp/VBFBl2wmVZFcmJ+x/MSnT5/If9EqHYwD+e89Bf0Yg="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AmSuCMT+/0FLogEjr01ZREf/FWMNQ6ivl29i9qTg4eXgNbjj1i0="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1024,7 +1025,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tk+qpbS6F0Sr2NHMI+7DX6hO2nmL78qURE/Wvd/rml2IfH14Vqw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZSImyKENzbhKkXSIPaszwM8EbWRyxXfdj23EXeMTCOaY0S4GUYI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1270,7 +1271,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bedEdHcWOmDhYK3M6RQxajRVkpxY2TyEq7glLSk8hilsH8qoqpI="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5nuHsowTs7P5ZP5sO32mSD+vSvYxgPgrDlVYovvprTvSCvbQznY="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -2048,7 +2049,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mn3FbWeWUTKRAPktadRzW6xkFDzq6teH1AaZCzjRwioNt8+pkRk="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cgi+4QYjETa1aCPUC8C+eHhmhWhJlcsTzib9susPv30cfqvs7AM="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2091,7 +2092,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xXOpXIlySs97AGA4jzaMVGagcnn8cLF5ZZs4WK6ktNfsSt7OPj4="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+8w113NJ0X260YDe1rGpsdkrvMM59zkvy+PKXfB6PvZxJ9TbFAQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;packageproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2140,7 +2141,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JOPIvPFKmOFjrDEfN5xwRUWOC2FQ5s+ANiyJ3kyLoKdfm9Bpb2o="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GJfc0uZnbTbCduVFOLj5YhffWZcgMmnpgyntwbABZJ5Ag+coWnk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -2710,7 +2711,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QHZgbVe1+g/UEVzoS4KGaspaEgIIF8u+u3ftZVx10vw7IoTxb+c="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:v1UQ0TGj3cDl/u7zo7d68+yi6tUfo3Dy6ogGFEA6yuPV/IhnfVQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;packageproduct&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -3394,7 +3395,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4ezdi6gnziAgB0RsyjfAn2F1vFfPinOkLTK9jNvktKVfQSHmT/4="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+H3TDyarmwRp5bYvzRIz3n0Jam8q6kxRJ/NmbN9X1CUzcK7dxK4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;packageproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -3440,7 +3441,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2ro1oKEUBXejoz3Eo2rgrC53NbT9dkCSwh4Luqicd5q/8OJzvgc="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gvEUDKtAu+LFJ1VQWqPy+BT7hRMVQlnYHEJibOVUa1fM/oug1Qo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;price&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -3617,7 +3618,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0aw9za04fvvCc2ver8RM00WQRX/5DShQRFoCvOd8N4/SCDoHU8E="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nUgQnzB5cwUyedDWCZ1eZRSA7qREO/vn/0jOfzNInLq5DfZIdgw="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;price&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -4474,7 +4475,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:jh8sphz33VTdKkmNphwRmrKeLIw4i7f9EoldRLWO6QyRYRj2wTw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VJ1yQzKx1kdaJkTnlD+nsNwZduczqD1PbTU2bdXi4GcEqu64/Ug="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -4517,7 +4518,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7MqEnuYP4r03cgP/mpKaIowLgd8Cq9fwcHVVtS2McOwie28QnJE="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:L7h5PYmrsULGnoi4Ndp3fb8n5SMmj4SThcgpO5JppmDQ+zJq6yU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;packageproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -4575,7 +4576,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zAsr0s0Kf29FJygaQP7wYSdzkwakjkYI6CCCnKYkZ+mmBcohhKQ="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Nivz/8VW8pG9l4NZIn/wSQtTGfjWZqW7ZpngFV8KQ5Oj2eSNZPk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -4619,7 +4620,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Dy2oHylexMCGfV6J/n+6D+HOh6If3hEWG52IOWpr6aL2ssy/I6M="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hMFdfRwcq47CY1q5xjD+ckoVYw0ha3PL9NfkgHFze/FDlFY/gBU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;packageproduct&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -4830,7 +4831,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fgkUQEQpHvZxYdHbNpaJ6e/K/XgfN/HLZ1cZ150u9hbk0rXNaPY="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:a2EWecOi4Ex7CTxwcZQTTre5i8mKEdYXVO/qbi8dxfVw6MXTHjQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -4879,7 +4880,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lRr0eyVk3ednPe65lv8cVQ0tXw6TVGkyLflTmJ8htlAN5+eCkyw="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mW0aVfdYCDUBZSICzVqSAAAciGtdqKSMbAbENS6FxyY1kDcwSEg="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -4929,7 +4930,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Tvq1rN3xnxxm0CyK9c+0qO61xXmZjmnGrqwK0qw1O0sFeq/Flx4="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pX2IfkTwAs8G1q/MoneWumVyZeAi9S610VlJw1B/gKTUW+Mqxuk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -5123,7 +5124,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:f+hxf6bJ5y8zUe0sCoYlDLGZldEUjqciKwY/mbOoNr3YkwD4o84="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5L/cLYruFq/wpNQEhcneWGbj5gRrkO0Hw7VPspn9Gyx+1WiOWqU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -5166,7 +5167,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SN2ggoyz/DyzqsMKlfUYP6o5T9d1n53dMMpP5ksAVQ0jzBmPPFM="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FS+Bvmdov3ywQRaQCArncpPG8z0WGGAM0P+prAKIESQNrO85AVo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;packageproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -5224,7 +5225,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:S+rZh5AD/cQPKh4LpzduWdW+M2Ii7E6TXNQdWZE9v6BM/MQ+khc="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZaHndxFM22BqjFDne1yr3HIEJkfLE7XCOZyDPvn//SUkgr1uD44="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;baseproduct&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -5374,7 +5375,7 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hTHowk4sgPUwX5Bt+S4Wgz4OwPPrBkQMsSia9IklxxuajqwUovo="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BN5wBL9zTJHm6PeCv6xV5HLjKhYbGcGDSetufKJyFvWLsKSdNlI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;price&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -5494,7 +5495,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;Avisio&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;gvozden&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ruFMPaxB4gtyWPO2dP20JO7McTTpi5p8xtJaiQKG2btUvAcQjTU="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Zw/YnQIU/E2Ei0Z7yLp9UGVp6gS+9OhiPBQi9nok7Q8HuKCDNlU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;price&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -6336,13 +6337,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2f01b0f9-3286-4988-88ae-98084618649f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rBXc1zemWuhvglIO89LmeaxAxu0VZ3MGUqVedKLT2efgptPAsFRWlJWSCuIxOUiuEr/80mwD5HwI&#13;
-8hEynUOxYw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a0f166a2-e0e4-409e-b497-0c066c3b071e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cxVI3XboyXYcgbgmGKmKTVi9Tk5T5Qd51h7U6ASf1rY61Rsk0g95mcwhroxtOA2k25HplZoqMawJ&#13;
-iuffFfkqFQ==</DigestValue></Reference></SignedInfo><SignatureValue>NzFJyx05t/ls6k2mK5HFCi/aoisgVoRZFn16lA2AeWOt7Uav2Za80mwiMIowWHiKrtQCHh86iQ+K&#13;
-3NFd+gpu1w7hU+JUSkTAOo+ijO2++l48PfSaeH0fcy0R+u8EasD3X1dFgn7jUBhQ6SdbOByJTy5W&#13;
-Ryuih0dDWz9tShPm0zNhHP8OfzLmaJAYrHHVliuyfRiaaMVUAE/pJJtZrphUQZv5BypaU0ElabYg&#13;
-hHmfceSuiTYgKCnA3weFBruYivmgksVVXsbbFpr/J2CjyTB78sCK+l5KGfudtzxLbwtyI512Yemn&#13;
-z4A/p3+LSBemPc5qr4q831+qloHVT96C3M+0dQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7026ed3e-86eb-44a4-9152-cadfc325dd25"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0IoRw1FM4gjCPa9bqhx0F0Ppl1JJpDvTWUg+7T2bv83N0e2jWp9In8uyMoPH4jDGftmWLqnJlK7H&#13;
+M+FIggTNtw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad39eade-927a-4167-ba11-4a8ff59b50e2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VnWlOn+0/VL2w3ylaL1s9z8scvT9OfAp5bv0QOjRsBDkdTfuiiP9bpLiqs8bOop3f3D59JkHJ7Bj&#13;
+ULherX5GFQ==</DigestValue></Reference></SignedInfo><SignatureValue>p14TSoRoccuPRC8fP02znPwWIhYGLsBMcGZ2XjoSrj/bYKsapC/aG4W+XBKEtaagDiJTqj3J2iAC&#13;
+YHgAh30/7R1mi8pn9SLnh3KM3wKv4uDrfUlA330RzFEI779Zr36RGAXz3Gn0vHBiDRSkScfxGHyW&#13;
+qYzfjw/sz837DjOsuoLBR+5LnalTqkpak5j3/0FGRr024B9/1z00v/vHcm9x17tKCJOtlMP2Tli/&#13;
+dd9jfuuJ8sFafYusn1SJEU5VFOq0Uw/SlX4DS/u/1VR4FiJCeelvmwHJXCMoTo2GdB5Y7qrb38Sx&#13;
+3m0hv/jtfg2gzatdbWYJexruMm/Z8DtZRM4gdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -6364,4 +6365,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a0f166a2-e0e4-409e-b497-0c066c3b071e" Target="#_2f01b0f9-3286-4988-88ae-98084618649f"><Timestamp>2022-10-17 06:31:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad39eade-927a-4167-ba11-4a8ff59b50e2" Target="#_7026ed3e-86eb-44a4-9152-cadfc325dd25"><Timestamp>2022-10-19 10:58:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
